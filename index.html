@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Women Corporate — Autonomisation des étudiantes par l'entrepreneuriat</title>
-  <meta name="description" content=" Women Corporate est une entreprise d'autonomise des jeunes filles étudiantes financièrement vulnérables en les intégrant dans un réseau de distribution de chips de banane produits localement." />
+  <meta name="description" content="Women Corporate transforme les étudiantes de l'Université d'Abomey-Calavi en entrepreneures grâce à un réseau de vente de chips de banane locales." />
   <meta property="og:title" content="Women Corporate" />
   <meta property="og:description" content="Des étudiantes qui entreprennent, pas qui subissent." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=1200" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -43,26 +44,13 @@
       display: flex; align-items: center; justify-content: space-between;
       height: 64px;
     }
-    .nav-logo {
-      font-family: var(--font-display);
-      font-size: 1.4rem; color: var(--wc-green);
-      letter-spacing: -0.02em; text-decoration: none;
-    }
+    .nav-logo { font-family: var(--font-display); font-size: 1.4rem; color: var(--wc-green); letter-spacing: -0.02em; text-decoration: none; }
     .nav-logo span { color: var(--wc-gold); }
     .nav-links { display: flex; gap: 2rem; align-items: center; }
-    .nav-links a {
-      font-size: 0.875rem; font-weight: 500;
-      color: var(--wc-gray); text-decoration: none;
-      transition: color 0.2s;
-    }
+    .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--wc-gray); text-decoration: none; transition: color 0.2s; }
     .nav-links a:hover { color: var(--wc-green); }
-    .nav-cta {
-      background: var(--wc-green) !important;
-      color: #fff !important;
-      padding: 0.5rem 1.25rem !important;
-      border-radius: 100px;
-    }
-    .nav-cta:hover { background: var(--wc-green-mid) !important; color: #fff !important; }
+    .nav-cta { background: var(--wc-green) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 100px; }
+    .nav-cta:hover { background: var(--wc-green-mid) !important; }
     .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
     .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--wc-dark); margin: 4px 0; transition: 0.3s; }
 
@@ -73,415 +61,209 @@
       display: grid; grid-template-columns: 1fr 1fr;
       align-items: center;
       padding: 4rem 4rem 4rem 5rem;
-      position: relative; overflow: hidden;
-      gap: 2rem;
+      position: relative; overflow: hidden; gap: 2rem;
     }
-    .hero::before {
-      content: '';
-      position: absolute; top: -100px; right: -100px;
-      width: 600px; height: 600px; border-radius: 50%;
-      background: rgba(255,255,255,0.04); pointer-events: none;
-    }
-    .hero::after {
-      content: '';
-      position: absolute; bottom: -140px; left: 35%;
-      width: 350px; height: 350px; border-radius: 50%;
-      background: rgba(255,255,255,0.03); pointer-events: none;
-    }
+    .hero::before { content: ''; position: absolute; top: -100px; right: -100px; width: 600px; height: 600px; border-radius: 50%; background: rgba(255,255,255,0.04); pointer-events: none; }
+    .hero::after { content: ''; position: absolute; bottom: -140px; left: 35%; width: 350px; height: 350px; border-radius: 50%; background: rgba(255,255,255,0.03); pointer-events: none; }
     .hero-content { position: relative; z-index: 2; }
-    .hero-badge {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(255,255,255,0.13);
-      color: rgba(255,255,255,0.9);
-      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase;
-      padding: 0.4rem 1rem; border-radius: 100px;
-      margin-bottom: 1.75rem;
-    }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.13); color: rgba(255,255,255,0.9); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; padding: 0.4rem 1rem; border-radius: 100px; margin-bottom: 1.75rem; }
     .hero-badge::before { content: '●'; color: #7EE8A2; font-size: 0.55rem; }
-    .hero h1 {
-      font-family: var(--font-display);
-      font-size: clamp(2.4rem, 4vw, 3.8rem);
-      line-height: 1.1; color: #fff;
-      margin-bottom: 1.5rem; letter-spacing: -0.02em;
-    }
+    .hero h1 { font-family: var(--font-display); font-size: clamp(2.4rem, 4vw, 3.8rem); line-height: 1.1; color: #fff; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
     .hero h1 em { font-style: italic; color: #A8E6BC; }
-    .hero-sub {
-      font-size: 1.05rem; line-height: 1.75;
-      color: rgba(255,255,255,0.75);
-      max-width: 460px; margin-bottom: 2.5rem;
-    }
+    .hero-sub { font-size: 1.05rem; line-height: 1.75; color: rgba(255,255,255,0.75); max-width: 460px; margin-bottom: 2.5rem; }
     .hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
 
-    .btn-primary {
-      background: #fff; color: var(--wc-green);
-      padding: 0.875rem 2rem; border-radius: 100px;
-      font-weight: 600; font-size: 0.9rem;
-      text-decoration: none; border: none; cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-      display: inline-block;
-    }
+    .btn-primary { background: #fff; color: var(--wc-green); padding: 0.875rem 2rem; border-radius: 100px; font-weight: 600; font-size: 0.9rem; text-decoration: none; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; display: inline-block; }
     .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
-    .btn-outline {
-      border: 1.5px solid rgba(255,255,255,0.4);
-      color: #fff; background: transparent;
-      padding: 0.875rem 2rem; border-radius: 100px;
-      font-weight: 500; font-size: 0.9rem;
-      text-decoration: none; cursor: pointer;
-      transition: background 0.2s; display: inline-block;
-    }
+    .btn-outline { border: 1.5px solid rgba(255,255,255,0.4); color: #fff; background: transparent; padding: 0.875rem 2rem; border-radius: 100px; font-weight: 500; font-size: 0.9rem; text-decoration: none; cursor: pointer; transition: background 0.2s; display: inline-block; }
     .btn-outline:hover { background: rgba(255,255,255,0.1); }
-    .btn-green {
-      background: var(--wc-green); color: #fff;
-      padding: 0.875rem 2rem; border-radius: 100px;
-      font-weight: 600; font-size: 0.9rem;
-      text-decoration: none; border: none; cursor: pointer;
-      transition: transform 0.2s, background 0.2s;
-      display: inline-block;
-    }
+    .btn-green { background: var(--wc-green); color: #fff; padding: 0.875rem 2rem; border-radius: 100px; font-weight: 600; font-size: 0.9rem; text-decoration: none; border: none; cursor: pointer; transition: transform 0.2s, background 0.2s; display: inline-block; }
     .btn-green:hover { background: var(--wc-green-mid); transform: translateY(-2px); }
-    .btn-dark-outline {
-      border: 1.5px solid rgba(255,255,255,0.25);
-      color: rgba(255,255,255,0.8); background: transparent;
-      padding: 0.875rem 2rem; border-radius: 100px;
-      font-weight: 500; font-size: 0.9rem;
-      text-decoration: none; cursor: pointer; display: inline-block;
-      transition: background 0.2s;
-    }
+    .btn-dark-outline { border: 1.5px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.8); background: transparent; padding: 0.875rem 2rem; border-radius: 100px; font-weight: 500; font-size: 0.9rem; text-decoration: none; cursor: pointer; display: inline-block; transition: background 0.2s; }
     .btn-dark-outline:hover { background: rgba(255,255,255,0.08); }
 
     /* Hero visual */
-    .hero-visual {
-      display: flex; justify-content: center; align-items: center;
-      position: relative; z-index: 2;
+    .hero-visual { display: flex; justify-content: center; align-items: center; position: relative; z-index: 2; }
+    .hero-img-wrapper {
+      position: relative; width: 360px; height: 420px;
     }
-    .hero-card-stack { position: relative; width: 320px; height: 390px; }
-    .stat-card {
-      position: absolute; background: #fff;
-      border-radius: 20px; padding: 1.5rem;
-      box-shadow: 0 24px 64px rgba(0,0,0,0.18);
+    .hero-img-main {
+      width: 300px; height: 340px;
+      object-fit: cover; border-radius: 24px;
+      position: absolute; top: 0; left: 0;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.3);
     }
-    .stat-card.main { width: 260px; top: 20px; left: 20px; }
-    .stat-card.secondary {
-      width: 210px; bottom: 10px; right: 0;
-      background: var(--wc-gold-light);
-      border: 1px solid rgba(200,146,42,0.2);
+    .hero-img-badge {
+      position: absolute; bottom: 20px; right: 0;
+      background: #fff; border-radius: 20px; padding: 1.25rem 1.5rem;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+      width: 190px;
     }
-    .stat-card .label {
-      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--wc-gray); margin-bottom: 0.5rem;
+    .hero-img-badge .label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--wc-gray); margin-bottom: 0.4rem; }
+    .hero-img-badge .value { font-family: var(--font-display); font-size: 2rem; color: var(--wc-green); line-height: 1; }
+    .hero-img-badge .desc { font-size: 0.75rem; color: var(--wc-gray); margin-top: 0.3rem; }
+    .hero-img-tag {
+      position: absolute; top: 20px; right: 0;
+      background: var(--wc-gold-light); border: 1px solid rgba(200,146,42,0.25);
+      border-radius: 14px; padding: 0.75rem 1rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     }
-    .stat-card .value {
-      font-family: var(--font-display); font-size: 2.8rem;
-      color: var(--wc-green); line-height: 1;
-    }
-    .stat-card .desc { font-size: 0.8rem; color: var(--wc-gray); margin-top: 0.5rem; line-height: 1.4; }
-    .stat-card.secondary .value { font-size: 2rem; color: var(--wc-gold); }
-    .avatar-row { display: flex; margin-top: 1rem; align-items: center; }
-    .avatar {
-      width: 30px; height: 30px; border-radius: 50%;
-      background: var(--wc-green-light); border: 2px solid #fff;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 0.6rem; font-weight: 600; color: var(--wc-green);
-      margin-left: -8px;
-    }
-    .avatar:first-child { margin-left: 0; }
-    .avatar-text { font-size: 0.72rem; color: var(--wc-gray); margin-left: 0.5rem; }
+    .hero-img-tag p { font-size: 0.78rem; font-weight: 600; color: var(--wc-gold); }
+    .hero-img-tag span { font-size: 0.68rem; color: #8B6914; }
 
     /* ── STATS BAR ── */
-    .stats-bar {
-      background: var(--wc-cream);
-      border-top: 1px solid var(--wc-border);
-      border-bottom: 1px solid var(--wc-border);
-      padding: 2.5rem 5rem;
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-    }
+    .stats-bar { background: var(--wc-cream); border-top: 1px solid var(--wc-border); border-bottom: 1px solid var(--wc-border); padding: 2.5rem 5rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
     .stat-item { text-align: center; }
-    .stat-item .num {
-      font-family: var(--font-display);
-      font-size: 2.5rem; color: var(--wc-green); line-height: 1;
-    }
+    .stat-item .num { font-family: var(--font-display); font-size: 2.5rem; color: var(--wc-green); line-height: 1; }
     .stat-item .stat-label { font-size: 0.82rem; color: var(--wc-gray); margin-top: 0.35rem; }
 
     /* ── SECTION BASE ── */
     section { padding: 5.5rem 5rem; }
-    .section-eyebrow {
-      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--wc-green); margin-bottom: 0.75rem;
-    }
-    .section-title {
-      font-family: var(--font-display);
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      line-height: 1.15; letter-spacing: -0.02em;
-      color: var(--wc-dark); margin-bottom: 1rem;
-    }
-    .section-sub {
-      font-size: 1rem; color: var(--wc-gray);
-      line-height: 1.75; max-width: 560px;
-    }
+    .section-eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--wc-green); margin-bottom: 0.75rem; }
+    .section-title { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1.15; letter-spacing: -0.02em; color: var(--wc-dark); margin-bottom: 1rem; }
+    .section-sub { font-size: 1rem; color: var(--wc-gray); line-height: 1.75; max-width: 560px; }
 
     /* ── PROBLÈME ── */
     .problem-section { background: #fff; }
-    .problem-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 4rem; align-items: center; margin-top: 3rem;
-    }
-    .problem-quote {
-      background: var(--wc-green); border-radius: 24px;
-      padding: 3rem; color: #fff; position: relative; overflow: hidden;
-    }
-    .problem-quote::before {
-      content: '"';
-      font-family: var(--font-display); font-size: 9rem; line-height: 0.6;
-      color: rgba(255,255,255,0.12);
-      position: absolute; top: 2rem; left: 1.5rem;
-    }
-    .problem-quote p {
-      font-family: var(--font-display); font-size: 1.35rem;
-      line-height: 1.55; position: relative; z-index: 1; font-style: italic;
-    }
-    .problem-quote cite {
-      display: block; margin-top: 1.75rem;
-      font-size: 0.78rem; font-style: normal;
-      color: rgba(255,255,255,0.6);
-    }
+    .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 3rem; }
+    .problem-quote { background: var(--wc-green); border-radius: 24px; padding: 3rem; color: #fff; position: relative; overflow: hidden; }
+    .problem-quote::before { content: '"'; font-family: var(--font-display); font-size: 9rem; line-height: 0.6; color: rgba(255,255,255,0.12); position: absolute; top: 2rem; left: 1.5rem; }
+    .problem-quote p { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.55; position: relative; z-index: 1; font-style: italic; }
+    .problem-quote cite { display: block; margin-top: 1.75rem; font-size: 0.78rem; font-style: normal; color: rgba(255,255,255,0.6); }
     .problem-points { display: flex; flex-direction: column; gap: 1.25rem; }
-    .problem-point {
-      display: flex; gap: 1rem; align-items: flex-start;
-      padding: 1.25rem; border-radius: 16px;
-      border: 1px solid var(--wc-border);
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
+    .problem-point { display: flex; gap: 1rem; align-items: flex-start; padding: 1.25rem; border-radius: 16px; border: 1px solid var(--wc-border); transition: border-color 0.2s, box-shadow 0.2s; }
     .problem-point:hover { border-color: var(--wc-green); box-shadow: 0 4px 16px rgba(29,122,74,0.08); }
-    .problem-point-icon {
-      width: 42px; height: 42px; border-radius: 12px;
-      background: var(--wc-green-light);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; font-size: 1.2rem;
-    }
+    .problem-point-icon { width: 42px; height: 42px; border-radius: 12px; background: var(--wc-green-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2rem; }
     .problem-point h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem; }
     .problem-point p { font-size: 0.84rem; color: var(--wc-gray); line-height: 1.6; }
 
     /* ── MODÈLE ── */
     .how-section { background: var(--wc-cream); }
     .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
-    .pillar {
-      background: #fff; border-radius: 20px;
-      border: 1px solid var(--wc-border);
-      padding: 2rem; position: relative; overflow: hidden;
-      transition: box-shadow 0.2s, transform 0.2s;
-    }
+    .pillar { background: #fff; border-radius: 20px; border: 1px solid var(--wc-border); padding: 2rem; position: relative; overflow: hidden; transition: box-shadow 0.2s, transform 0.2s; }
     .pillar:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); transform: translateY(-3px); }
-    .pillar::before {
-      content: attr(data-num);
-      position: absolute; top: -0.75rem; right: 1rem;
-      font-family: var(--font-display); font-size: 6rem; line-height: 1;
-      color: var(--wc-green-light); font-style: italic; pointer-events: none;
-    }
-    .pillar-icon {
-      width: 48px; height: 48px; border-radius: 14px;
-      background: var(--wc-green); color: #fff;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.4rem; margin-bottom: 1.25rem;
-    }
+    .pillar::before { content: attr(data-num); position: absolute; top: -0.75rem; right: 1rem; font-family: var(--font-display); font-size: 6rem; line-height: 1; color: var(--wc-green-light); font-style: italic; pointer-events: none; }
+    .pillar-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--wc-green); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 1.25rem; }
     .pillar h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
     .pillar p { font-size: 0.84rem; color: var(--wc-gray); line-height: 1.65; }
 
     /* ── PRODUIT ── */
     .product-section { background: #fff; }
-    .product-grid {
-      display: grid; grid-template-columns: 1fr 1.2fr;
-      gap: 4rem; align-items: center; margin-top: 3rem;
+    .product-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: start; margin-top: 3rem; }
+
+    /* Image produit principale */
+    .product-img-block { display: flex; flex-direction: column; gap: 1rem; }
+    .product-img-main {
+      width: 100%; aspect-ratio: 4/3;
+      object-fit: cover; border-radius: 20px;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.12);
     }
-    .chips-visual {
-      background: var(--wc-gold-light); border-radius: 24px;
-      padding: 2.5rem;
-      border: 1px solid rgba(200,146,42,0.15);
+    .product-img-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .product-img-thumb {
+      width: 100%; aspect-ratio: 1;
+      object-fit: cover; border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
     }
-    .chips-title {
-      font-family: var(--font-display); font-size: 1.8rem;
-      color: var(--wc-gold); margin-bottom: 0.4rem;
-    }
-    .chips-sub { font-size: 0.84rem; color: #8B6914; margin-bottom: 1.25rem; }
-    .size-cards { display: flex; flex-direction: column; gap: 0.65rem; }
-    .size-card {
-      background: #fff; border-radius: 12px;
-      padding: 0.75rem 1rem;
-      display: flex; align-items: center; justify-content: space-between;
-      border: 1px solid rgba(200,146,42,0.15);
-      transition: border-color 0.2s;
-    }
-    .size-card:hover { border-color: var(--wc-gold); }
+    .product-img-thumb:hover { transform: scale(1.03); }
+
+    /* Grille tarifaire */
+    .product-right { display: flex; flex-direction: column; gap: 1.5rem; }
+    .chips-header { margin-bottom: 0.5rem; }
+    .chips-title { font-family: var(--font-display); font-size: 1.6rem; color: var(--wc-gold); margin-bottom: 0.3rem; }
+    .chips-sub { font-size: 0.84rem; color: #8B6914; }
+    .size-cards { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem; }
+    .size-card { background: var(--wc-gold-light); border-radius: 12px; padding: 0.75rem 1rem; display: flex; align-items: center; justify-content: space-between; border: 1px solid rgba(200,146,42,0.15); transition: border-color 0.2s, transform 0.15s; }
+    .size-card:hover { border-color: var(--wc-gold); transform: translateX(4px); }
     .size-card .size { font-weight: 600; font-size: 0.9rem; }
-    .size-card .price {
-      background: var(--wc-green); color: #fff;
-      padding: 0.25rem 0.8rem; border-radius: 100px;
-      font-size: 0.78rem; font-weight: 600;
-    }
-    .product-info { display: flex; flex-direction: column; gap: 1.5rem; }
+    .size-card .price { background: var(--wc-green); color: #fff; padding: 0.25rem 0.8rem; border-radius: 100px; font-size: 0.78rem; font-weight: 600; }
+
+    .product-info { display: flex; flex-direction: column; gap: 1.25rem; }
     .product-point { display: flex; gap: 1rem; align-items: flex-start; }
-    .product-point-dot {
-      width: 8px; height: 8px; border-radius: 50%;
-      background: var(--wc-green); flex-shrink: 0; margin-top: 7px;
-    }
+    .product-point-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--wc-green); flex-shrink: 0; margin-top: 7px; }
     .product-point h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem; }
     .product-point p { font-size: 0.84rem; color: var(--wc-gray); line-height: 1.65; }
 
-    /* ── DEVENIR PARTENAIRE ── */
+    /* ── GALERIE ── */
+    .gallery-section { background: var(--wc-cream); padding: 4rem 5rem; }
+    .gallery-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 240px 240px; gap: 1rem; margin-top: 2rem; }
+    .gallery-item { overflow: hidden; border-radius: 16px; position: relative; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; display: block; }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-item.tall { grid-row: span 2; }
+    .gallery-item .gallery-label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.6)); padding: 1.5rem 1rem 0.75rem; color: #fff; font-size: 0.78rem; font-weight: 500; opacity: 0; transition: opacity 0.3s; }
+    .gallery-item:hover .gallery-label { opacity: 1; }
+
+    /* ── PARTENAIRE ── */
     .partner-section { background: var(--wc-green); }
     .partner-section .section-eyebrow { color: #A8E6BC; }
     .partner-section .section-title { color: #fff; }
     .partner-section .section-sub { color: rgba(255,255,255,0.7); }
-    .steps {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem; margin-top: 3rem; position: relative;
-    }
-    .steps::before {
-      content: '';
-      position: absolute; top: 23px; left: 12%; right: 12%;
-      height: 1px; background: rgba(255,255,255,0.2);
-    }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; position: relative; }
+    .steps::before { content: ''; position: absolute; top: 23px; left: 12%; right: 12%; height: 1px; background: rgba(255,255,255,0.2); }
     .step { text-align: center; position: relative; z-index: 1; }
-    .step-num {
-      width: 48px; height: 48px; border-radius: 50%;
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.3);
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 1rem;
-      font-family: var(--font-display); font-size: 1.2rem; color: #fff;
-    }
+    .step-num { width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-family: var(--font-display); font-size: 1.2rem; color: #fff; }
     .step h4 { font-size: 0.9rem; font-weight: 600; color: #fff; margin-bottom: 0.4rem; }
     .step p { font-size: 0.8rem; color: rgba(255,255,255,0.65); line-height: 1.55; }
     .partner-cta { text-align: center; margin-top: 3rem; }
 
     /* ── IMPACT ── */
-    .impact-section { background: var(--wc-cream); }
+    .impact-section { background: #fff; }
     .impact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
-    .impact-card {
-      border-radius: 20px; padding: 2rem;
-      border: 1px solid var(--wc-border);
-      background: #fff;
-    }
+    .impact-card { border-radius: 20px; padding: 2rem; border: 1px solid var(--wc-border); background: #fff; }
     .impact-card.featured { background: var(--wc-green); border-color: var(--wc-green); }
-    .impact-period {
-      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--wc-green); margin-bottom: 1rem;
-    }
+    .impact-period { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--wc-green); margin-bottom: 1rem; }
     .impact-card.featured .impact-period { color: rgba(255,255,255,0.6); }
-    .impact-card h3 {
-      font-family: var(--font-display); font-size: 1.25rem;
-      margin-bottom: 1rem; line-height: 1.3; color: var(--wc-dark);
-    }
+    .impact-card h3 { font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 1rem; line-height: 1.3; color: var(--wc-dark); }
     .impact-card.featured h3 { color: #fff; }
     .impact-list { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
-    .impact-list li {
-      font-size: 0.84rem; color: var(--wc-gray);
-      display: flex; gap: 0.6rem; align-items: flex-start; line-height: 1.5;
-    }
+    .impact-list li { font-size: 0.84rem; color: var(--wc-gray); display: flex; gap: 0.6rem; align-items: flex-start; line-height: 1.5; }
     .impact-list li::before { content: '✓'; color: var(--wc-green); font-weight: 700; flex-shrink: 0; }
     .impact-card.featured .impact-list li { color: rgba(255,255,255,0.82); }
     .impact-card.featured .impact-list li::before { color: #A8E6BC; }
 
     /* ── FONDATRICE ── */
-    .founder-section { background: #fff; }
+    .founder-section { background: var(--wc-cream); }
     .founder-grid { display: grid; grid-template-columns: 280px 1fr; gap: 4rem; align-items: center; margin-top: 3rem; }
-    .founder-portrait {
-      background: var(--wc-green); border-radius: 24px;
-      aspect-ratio: 3/4; display: flex; align-items: flex-end;
-      position: relative; overflow: hidden;
-    }
-    .founder-initials {
-      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -60%);
-      font-family: var(--font-display); font-size: 5rem;
-      color: rgba(255,255,255,0.18); font-style: italic; white-space: nowrap;
-    }
-    .founder-name-tag {
-      position: absolute; bottom: 1.25rem; left: 1.25rem; right: 1.25rem;
-      background: rgba(0,0,0,0.25); backdrop-filter: blur(6px);
-      border-radius: 12px; padding: 1rem;
-      border: 1px solid rgba(255,255,255,0.15);
-    }
+    .founder-portrait { background: var(--wc-green); border-radius: 24px; aspect-ratio: 3/4; display: flex; align-items: flex-end; position: relative; overflow: hidden; }
+    .founder-initials { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -60%); font-family: var(--font-display); font-size: 5rem; color: rgba(255,255,255,0.18); font-style: italic; white-space: nowrap; }
+    .founder-name-tag { position: absolute; bottom: 1.25rem; left: 1.25rem; right: 1.25rem; background: rgba(0,0,0,0.25); backdrop-filter: blur(6px); border-radius: 12px; padding: 1rem; border: 1px solid rgba(255,255,255,0.15); }
     .founder-name-tag h3 { color: #fff; font-size: 0.95rem; font-weight: 600; }
     .founder-name-tag p { color: rgba(255,255,255,0.7); font-size: 0.78rem; margin-top: 0.2rem; }
-    .founder-bio h3 {
-      font-family: var(--font-display); font-size: 1.7rem;
-      margin-bottom: 1.25rem; line-height: 1.3;
-    }
+    .founder-bio h3 { font-family: var(--font-display); font-size: 1.7rem; margin-bottom: 1.25rem; line-height: 1.3; }
     .founder-bio p { font-size: 0.9rem; color: var(--wc-gray); line-height: 1.8; margin-bottom: 1rem; }
     .credentials { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
-    .credential {
-      background: var(--wc-green-light); color: var(--wc-green);
-      font-size: 0.74rem; font-weight: 500;
-      padding: 0.35rem 0.9rem; border-radius: 100px;
-    }
+    .credential { background: var(--wc-green-light); color: var(--wc-green); font-size: 0.74rem; font-weight: 500; padding: 0.35rem 0.9rem; border-radius: 100px; }
 
     /* ── CONTACT ── */
-    .contact-section { background: var(--wc-cream); }
+    .contact-section { background: #fff; }
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 3rem; }
     .contact-info h3 { font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 1rem; }
     .contact-info p { font-size: 0.9rem; color: var(--wc-gray); line-height: 1.75; margin-bottom: 1.5rem; }
-    .contact-detail {
-      display: flex; align-items: center; gap: 0.75rem;
-      font-size: 0.88rem; color: var(--wc-dark); margin-bottom: 0.85rem;
-    }
+    .contact-detail { display: flex; align-items: center; gap: 0.75rem; font-size: 0.88rem; color: var(--wc-dark); margin-bottom: 0.85rem; }
     .contact-detail a { color: var(--wc-green); text-decoration: none; }
     .contact-detail a:hover { text-decoration: underline; }
-    .contact-icon {
-      width: 36px; height: 36px; border-radius: 10px;
-      background: var(--wc-green-light); color: var(--wc-green);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; font-size: 1rem;
-    }
+    .contact-icon { width: 36px; height: 36px; border-radius: 10px; background: var(--wc-green-light); color: var(--wc-green); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem; }
     .contact-form { display: flex; flex-direction: column; gap: 1rem; }
     .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
     .form-group label { font-size: 0.82rem; font-weight: 500; color: var(--wc-dark); }
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-      padding: 0.75rem 1rem;
-      border: 1px solid var(--wc-border);
-      border-radius: 10px; font-family: var(--font-body);
-      font-size: 0.88rem; color: var(--wc-dark);
-      background: #fff;
-      transition: border-color 0.2s, box-shadow 0.2s;
-      outline: none;
-    }
-    .form-group input:focus,
-    .form-group textarea:focus,
-    .form-group select:focus {
-      border-color: var(--wc-green);
-      box-shadow: 0 0 0 3px rgba(29,122,74,0.1);
-    }
+    .form-group input, .form-group textarea, .form-group select { padding: 0.75rem 1rem; border: 1px solid var(--wc-border); border-radius: 10px; font-family: var(--font-body); font-size: 0.88rem; color: var(--wc-dark); background: #fff; transition: border-color 0.2s, box-shadow 0.2s; outline: none; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--wc-green); box-shadow: 0 0 0 3px rgba(29,122,74,0.1); }
     .form-group textarea { resize: vertical; min-height: 120px; }
-    .form-submit {
-      background: var(--wc-green); color: #fff;
-      padding: 0.875rem 2rem; border-radius: 100px;
-      font-weight: 600; font-size: 0.9rem; border: none;
-      cursor: pointer; width: fit-content;
-      transition: background 0.2s, transform 0.2s;
-    }
+    .form-submit { background: var(--wc-green); color: #fff; padding: 0.875rem 2rem; border-radius: 100px; font-weight: 600; font-size: 0.9rem; border: none; cursor: pointer; width: fit-content; transition: background 0.2s, transform 0.2s; }
     .form-submit:hover { background: var(--wc-green-mid); transform: translateY(-2px); }
 
     /* ── CTA FINAL ── */
-    .cta-section {
-      background: var(--wc-dark); text-align: center;
-      padding: 6rem 5rem;
-    }
+    .cta-section { background: var(--wc-dark); text-align: center; padding: 6rem 5rem; position: relative; overflow: hidden; }
+    .cta-bg-img { position: absolute; inset: 0; object-fit: cover; width: 100%; height: 100%; opacity: 0.08; }
+    .cta-content { position: relative; z-index: 1; }
     .cta-section .section-eyebrow { color: #A8E6BC; }
-    .cta-section h2 {
-      font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem);
-      color: #fff; margin-bottom: 1.25rem; letter-spacing: -0.02em;
-    }
-    .cta-section p { color: rgba(255,255,255,0.6); margin-bottom: 2.5rem; font-size: 1rem; max-width: 500px; margin-left: auto; margin-right: auto; margin-bottom: 2.5rem; }
+    .cta-section h2 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); color: #fff; margin-bottom: 1.25rem; letter-spacing: -0.02em; }
+    .cta-section p { color: rgba(255,255,255,0.6); font-size: 1rem; max-width: 500px; margin: 0 auto 2.5rem; }
     .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
     /* ── FOOTER ── */
-    footer {
-      background: var(--wc-dark);
-      border-top: 1px solid rgba(255,255,255,0.06);
-      padding: 2rem 5rem;
-      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
-    }
+    footer { background: var(--wc-dark); border-top: 1px solid rgba(255,255,255,0.06); padding: 2rem 5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
     .footer-logo { font-family: var(--font-display); color: #fff; font-size: 1.2rem; text-decoration: none; }
     .footer-logo span { color: var(--wc-gold); }
     footer p { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
@@ -492,23 +274,19 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .nav-links { display: none; }
-      .nav-links.open {
-        display: flex; flex-direction: column;
-        position: absolute; top: 64px; left: 0; right: 0;
-        background: #fff; padding: 1.5rem 2rem;
-        border-bottom: 1px solid var(--wc-border);
-        gap: 1.25rem; z-index: 99;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-      }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: #fff; padding: 1.5rem 2rem; border-bottom: 1px solid var(--wc-border); gap: 1.25rem; z-index: 99; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
       .nav-hamburger { display: block; }
       .hero { grid-template-columns: 1fr; padding: 3rem 2rem; min-height: auto; }
       .hero-visual { display: none; }
       .hero h1 { font-size: 2.4rem; }
       .stats-bar { grid-template-columns: repeat(2, 1fr); padding: 2rem; }
       section { padding: 3.5rem 2rem; }
+      .gallery-section { padding: 3rem 2rem; }
       .problem-grid { grid-template-columns: 1fr; gap: 2rem; }
       .pillars { grid-template-columns: 1fr; }
       .product-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .gallery-item.tall { grid-row: span 1; }
       .steps { grid-template-columns: repeat(2, 1fr); }
       .steps::before { display: none; }
       .impact-grid { grid-template-columns: 1fr; }
@@ -522,6 +300,7 @@
       .stats-bar { grid-template-columns: repeat(2, 1fr); padding: 1.5rem; }
       .stat-item .num { font-size: 1.8rem; }
       .hero-actions { flex-direction: column; align-items: flex-start; }
+      .gallery-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -548,28 +327,26 @@
   <div class="hero-content">
     <div class="hero-badge">Bénin · UAC · Depuis 2026</div>
     <h1>Des étudiantes qui <em>entreprennent,</em> pas qui subissent.</h1>
-    <p class="hero-sub">Women Corporate transforme les étudiantes de l'Université d'Abomey-Calavi en entrepreneures, grâce à un réseau de vente de chips de banane locales — flexible, inclusif et générateur de revenus réels.</p>
+    <p class="hero-sub">Women Corporate est une entreprise sociale béninoise qui autonomise les jeunes filles étudiantes de l'Université d'Abomey-Calavi. Sans capital de départ, chaque étudiante partenaire intègre notre réseau de vente de chips de banane locales et génère un revenu mensuel réel pendant ses temps libres.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Devenir partenaire</a>
       <a href="#modele" class="btn-outline">Découvrir le modèle</a>
     </div>
   </div>
   <div class="hero-visual">
-    <div class="hero-card-stack">
-      <div class="stat-card main">
-        <div class="label">Réseau cible – 6 mois</div>
-        <div class="value">30</div>
-        <div class="desc">Étudiantes partenaires actives sur le campus de l'UAC</div>
-        <div class="avatar-row">
-          <div class="avatar">AF</div>
-          <div class="avatar">MK</div>
-          <div class="avatar">DT</div>
-          <div class="avatar">RB</div>
-          <span class="avatar-text">et bien d'autres</span>
-        </div>
+    <div class="hero-img-wrapper">
+      <img
+        class="hero-img-main"
+        src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=600&q=85&auto=format&fit=crop"
+        alt="Chips de banane dorées et croustillantes"
+        loading="eager"
+      />
+      <div class="hero-img-tag">
+        <p>🍌 Local & Naturel</p>
+        <span>Bananes du Bénin</span>
       </div>
-      <div class="stat-card secondary">
-        <div class="label">Revenu mensuel minimum</div>
+      <div class="hero-img-badge">
+        <div class="label">Revenu mensuel min.</div>
         <div class="value">15K</div>
         <div class="desc">FCFA par partenaire (~25 $)</div>
       </div>
@@ -604,29 +381,29 @@
   <p class="section-sub">Sur notre campus, la précarité financière frappe davantage les étudiantes. Sans alternative viable, trop d'entre elles abandonnent leurs études ou s'exposent à des situations dangereuses.</p>
   <div class="problem-grid">
     <div class="problem-quote">
-      <p>Les étudiantes disposent de très peu d'options génératrices de revenus, les exposant à la dépendance, à l'échec académique et dans certains cas à des formes d'exploitation.</p>
+      <p>À l'UAC, les jeunes filles issues de familles défavorisées n'ont pratiquement aucune source de revenu adaptée à leur condition — contrairement aux jeunes hommes qui peuvent accéder à des travaux physiquement exigeants comme les chantiers de construction ou les travaux routiers pour couvrir hébergement, restauration et fournitures scolaires. Cette inégalité les expose à trois vulnérabilités majeures.</p>
       <cite>— Enquête terrain auprès de 50+ étudiantes de l'UAC, 2026</cite>
     </div>
     <div class="problem-points">
       <div class="problem-point">
         <div class="problem-point-icon">⚠️</div>
         <div>
-          <h4>Vulnérabilité économique</h4>
-          <p>Les étudiantes n'ont pas accès aux travaux physiques temporaires disponibles pour leurs homologues masculins, creusant un fossé économique structurel.</p>
+          <h4>Dépendance économique</h4>
+          <p>Faute de revenus propres, elles deviennent dépendantes de la famille ou de tiers, souvent au prix de leur liberté et de leur dignité.</p>
+        </div>
+      </div>
+      <div class="problem-point">
+        <div class="problem-point-icon">🚨</div>
+        <div>
+          <h4>Exploitation et abus</h4>
+          <p>Certaines se retrouvent dans des situations dangereuses où leur vulnérabilité financière est exploitée sexuellement ou moralement.</p>
         </div>
       </div>
       <div class="problem-point">
         <div class="problem-point-icon">🎓</div>
         <div>
           <h4>Abandon académique</h4>
-          <p>La précarité financière est l'une des premières causes d'abandon des études supérieures chez les jeunes femmes béninoises.</p>
-        </div>
-      </div>
-      <div class="problem-point">
-        <div class="problem-point-icon">🕐</div>
-        <div>
-          <h4>Aucune solution adaptée</h4>
-          <p>Les programmes existants ciblent les femmes rurales adultes, pas les étudiantes avec des emplois du temps contraints et sans capital de départ.</p>
+          <p>L'incapacité à subvenir à leurs besoins les pousse à interrompre leurs études, gâchant un potentiel immense pour le Bénin.</p>
         </div>
       </div>
     </div>
@@ -652,7 +429,7 @@
     <div class="pillar" data-num="3">
       <div class="pillar-icon">🛡️</div>
       <h3>Démarrage progressif sécurisé</h3>
-      <p>Caution symbolique de 500 FCFA, stock initial plafonné à 10 sachets, contrat simple et système de parrainage par une partenaire expérimentée. Aucune étudiante n'est exclue pour manque de capital.</p>
+      <p>Caution symbolique de 500 FCFA, stock initial plafonné à 10 sachets, contrat simple et système de parrainage. Aucune étudiante n'est exclue pour manque de capital.</p>
     </div>
   </div>
 </section>
@@ -662,9 +439,33 @@
   <div class="section-eyebrow">Le produit</div>
   <div class="section-title">Des chips de banane béninoises. Locales, saines, accessibles.</div>
   <div class="product-grid">
-    <div class="chips-visual">
-      <div class="chips-title">🍌 Chips de banane</div>
-      <p class="chips-sub">Disponibles en 5 formats adaptés à tous les budgets étudiants</p>
+    <div class="product-img-block">
+      <img
+        class="product-img-main"
+        src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=700&q=85&auto=format&fit=crop"
+        alt="Chips de banane dans un bol, produit artisanal"
+        loading="lazy"
+      />
+      <div class="product-img-row">
+        <img
+          class="product-img-thumb"
+          src="https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=400&q=80&auto=format&fit=crop"
+          alt="Bananes fraîches du Bénin"
+          loading="lazy"
+        />
+        <img
+          class="product-img-thumb"
+          src="https://images.unsplash.com/photo-1599599810694-b5b37304c041?w=400&q=80&auto=format&fit=crop"
+          alt="Chips croustillantes en sachet"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <div class="product-right">
+      <div class="chips-header">
+        <div class="chips-title">🍌 Chips de banane</div>
+        <p class="chips-sub">5 formats adaptés à tous les budgets</p>
+      </div>
       <div class="size-cards">
         <div class="size-card"><span class="size">60 g</span><span class="price">200 FCFA</span></div>
         <div class="size-card"><span class="size">100 g</span><span class="price">300 FCFA</span></div>
@@ -672,36 +473,57 @@
         <div class="size-card"><span class="size">400 g</span><span class="price">1 000 FCFA</span></div>
         <div class="size-card"><span class="size">840 g</span><span class="price">2 000 FCFA</span></div>
       </div>
+      <div class="product-info">
+        <div class="product-point">
+          <div class="product-point-dot"></div>
+          <div>
+            <h4>Qualité garantie</h4>
+            <p>Emballages hermétiques professionnels, processus contrôlé, certification hygiène alimentaire en cours.</p>
+          </div>
+        </div>
+        <div class="product-point">
+          <div class="product-point-dot"></div>
+          <div>
+            <h4>Filière locale valorisée</h4>
+            <p>Sourcées auprès des producteurs béninois, nos bananes soutiennent l'agriculture locale et les chaînes de valeur agroalimentaires.</p>
+          </div>
+        </div>
+        <div class="product-point">
+          <div class="product-point-dot"></div>
+          <div>
+            <h4>Expansion prévue</h4>
+            <p>Chips de patate douce et chips de manioc en développement dès la deuxième année.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="product-info">
-      <div class="product-point">
-        <div class="product-point-dot"></div>
-        <div>
-          <h4>Qualité garantie</h4>
-          <p>Emballages hermétiques professionnels, processus de production contrôlé, certification hygiène alimentaire en cours — bien au-dessus des snacks informels du campus.</p>
-        </div>
-      </div>
-      <div class="product-point">
-        <div class="product-point-dot"></div>
-        <div>
-          <h4>Filière locale valorisée</h4>
-          <p>En sourcant auprès des producteurs béninois de bananes, Women Corporate soutient directement l'agriculture locale et contribue au développement des chaînes de valeur agroalimentaires.</p>
-        </div>
-      </div>
-      <div class="product-point">
-        <div class="product-point-dot"></div>
-        <div>
-          <h4>Prix pensés pour le campus</h4>
-          <p>Du sachet à 200 FCFA consommable entre deux cours au format familial de 840 g, chaque taille est conçue pour s'adapter aux budgets et aux besoins des étudiants.</p>
-        </div>
-      </div>
-      <div class="product-point">
-        <div class="product-point-dot"></div>
-        <div>
-          <h4>Expansion de la gamme prévue</h4>
-          <p>Chips de patate douce et chips de manioc en développement pour diversifier l'offre dès la deuxième année d'activité.</p>
-        </div>
-      </div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section class="gallery-section" id="galerie">
+  <div class="section-eyebrow">En images</div>
+  <div class="section-title">Le goût du changement.</div>
+  <div class="gallery-grid">
+    <div class="gallery-item tall">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=700&q=80&auto=format&fit=crop" alt="Snacks artisanaux locaux" loading="lazy" />
+      <div class="gallery-label">Notre produit phare</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=500&q=80&auto=format&fit=crop" alt="Bananes fraîches sélectionnées" loading="lazy" />
+      <div class="gallery-label">Bananes locales sélectionnées</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?w=500&q=80&auto=format&fit=crop" alt="Emballages professionnels" loading="lazy" />
+      <div class="gallery-label">Emballages professionnels</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=500&q=80&auto=format&fit=crop" alt="Agriculture locale béninoise" loading="lazy" />
+      <div class="gallery-label">Filière agricole locale</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1609501676725-7186f017a4b7?w=500&q=80&auto=format&fit=crop" alt="Production artisanale" loading="lazy" />
+      <div class="gallery-label">Production soignée</div>
     </div>
   </div>
 </section>
@@ -861,12 +683,15 @@
 
 <!-- CTA FINAL -->
 <section class="cta-section">
-  <div class="section-eyebrow">Rejoignez le mouvement</div>
-  <h2>Ensemble, changeons les règles du jeu.</h2>
-  <p>Women Corporate est plus qu'une entreprise — c'est un mouvement pour l'autonomisation des jeunes femmes africaines. Rejoignez-nous.</p>
-  <div class="cta-buttons">
-    <a href="#contact" class="btn-primary">Nous contacter</a>
-    <a href="mailto:affinoelineayebou@gmail.com" class="btn-dark-outline">affinoelineayebou@gmail.com</a>
+  <img class="cta-bg-img" src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=1400&q=60&auto=format&fit=crop" alt="" aria-hidden="true" />
+  <div class="cta-content">
+    <div class="section-eyebrow">Rejoignez le mouvement</div>
+    <h2>Ensemble, changeons les règles du jeu.</h2>
+    <p>Women Corporate est plus qu'une entreprise — c'est un mouvement pour l'autonomisation des jeunes femmes africaines. Rejoignez-nous.</p>
+    <div class="cta-buttons">
+      <a href="#contact" class="btn-primary">Nous contacter</a>
+      <a href="mailto:affinoelineayebou@gmail.com" class="btn-dark-outline">affinoelineayebou@gmail.com</a>
+    </div>
   </div>
 </section>
 
@@ -880,12 +705,10 @@
 <script>
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('nav-links');
-
   hamburger.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
     hamburger.setAttribute('aria-expanded', isOpen);
   });
-
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('open');
@@ -897,13 +720,10 @@
     const nom = document.getElementById('nom').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
-    if (!nom || !email || !message) {
-      alert('Veuillez remplir tous les champs obligatoires.');
-      return;
-    }
+    if (!nom || !email || !message) { alert('Veuillez remplir tous les champs obligatoires.'); return; }
     const subject = encodeURIComponent('Message depuis le site Women Corporate');
-    const body = encodeURIComponent(`Nom : ${nom}\nEmail : ${email}\n\nMessage :\n${message}`);
-    window.location.href = `mailto:affinoelineayebou@gmail.com?subject=${subject}&body=${body}`;
+    const body = encodeURIComponent('Nom : ' + nom + '\nEmail : ' + email + '\n\nMessage :\n' + message);
+    window.location.href = 'mailto:affinoelineayebou@gmail.com?subject=' + subject + '&body=' + body;
   }
 
   const observer = new IntersectionObserver((entries) => {
@@ -914,8 +734,7 @@
       }
     });
   }, { threshold: 0.1 });
-
-  document.querySelectorAll('.pillar, .impact-card, .problem-point, .step').forEach(el => {
+  document.querySelectorAll('.pillar, .impact-card, .problem-point, .step, .gallery-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
